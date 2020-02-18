@@ -71,12 +71,19 @@ export class Page extends Component<Props, State> {
     console.log('Login for', account.username)
     try {
       // Find the app wallet, or create one if necessary:
-      const walletInfo = account.getFirstWalletInfo('wallet:ethereum')
+      const walletInfo = account.getFirstWalletInfo('wallet:telos')
       const wallet =
         walletInfo == null
-          ? await account.createCurrencyWallet('wallet:ethereum')
+          ? await account.createCurrencyWallet('wallet:telos')
           : await account.waitForCurrencyWallet(walletInfo.id)
-
+      console.log(
+        'page, account is: ',
+        account,
+        ' and walletInfo is: ',
+        walletInfo,
+        ' wallet is: ',
+        wallet
+      )
       this.setState({ account, wallet })
     } catch (e) {
       console.error(e)

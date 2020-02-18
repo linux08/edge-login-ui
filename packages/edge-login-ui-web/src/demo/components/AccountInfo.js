@@ -22,6 +22,13 @@ export function AccountInfo(props: Props) {
         name="walletInfos"
         src={account.allKeys}
       />
+      <ReactJson
+        collapsed={2}
+        displayDataTypes={false}
+        displayObjectSize={false}
+        name="walletInfos"
+        src={account.currencyConfig}
+      />
     </div>
   )
 }

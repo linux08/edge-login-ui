@@ -43,9 +43,11 @@ export async function makeUiContext(opts: EdgeUiContextOptions) {
     appId,
     hideKeys,
     plugins: {
-      coinbase: true,
-      coincap: true,
-      ethereum: true
+      coinbase: false,
+      coincap: false,
+      ethereum: false,
+      eos: false,
+      telos: true
     }
   })
 
