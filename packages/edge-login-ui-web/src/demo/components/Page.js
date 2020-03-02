@@ -49,12 +49,10 @@ export class Page extends Component<Props, State> {
 
     // Customize these constants for your own application:
     const options: EdgeUiContextOptions = {
-      apiKey: '0b5776a91bf409ac10a3fe5f3944bf50417209a0',
-      appId: 'com.mydomain.myapp',
-      assetsPath,
-      vendorImageUrl:
-        'https://airbitz.co/go/wp-content/uploads/2016/10/GenericEdgeLoginIcon.png',
-      vendorName: 'Cloud Chain'
+      apiKey: 'aac3421135575c7433551969b28f72c5b74d7b78',
+      appId: 'com.dstream.web',
+      appName: 'CaptainsRelay',
+      assetsPath
     }
 
     const context = await makeEdgeUiContext(options)

@@ -1,6 +1,7 @@
 // @flow
 
 import type { DiskletFolder } from 'disklet'
+import { makeReactNativeDisklet } from 'disklet'
 import type { EdgeContext } from 'edge-core-js/types'
 
 import { isTouchEnabled } from '../../native/keychain'
